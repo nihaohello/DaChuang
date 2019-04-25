@@ -1,0 +1,195 @@
+2019-04-21 06:39:59 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: SeeMeiSpider)
+2019-04-21 06:39:59 [scrapy.utils.log] INFO: Versions: lxml 4.2.5.0, libxml2 2.9.4, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 18.9.0, Python 3.7.2+ (default, Feb 27 2019, 15:41:59) - [GCC 8.2.0], pyOpenSSL 18.0.0 (OpenSSL 1.1.1b  26 Feb 2019), cryptography 2.3, Platform Linux-4.19.0-kali1-amd64-x86_64-with-Kali-kali-rolling-kali-rolling
+2019-04-21 06:39:59 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'SeeMeiSpider', 'DEPTH_LIMIT': 2, 'LOG_FILE': 'logs/SeeMeiSpider/spider/41611a3b640011e9aff5000c29b0d8e8.log', 'NEWSPIDER_MODULE': 'SeeMeiSpider.spiders', 'SPIDER_MODULES': ['SeeMeiSpider.spiders']}
+2019-04-21 06:39:59 [scrapy.extensions.telnet] INFO: Telnet Password: 5063dbd15e987b27
+2019-04-21 06:39:59 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2019-04-21 06:39:59 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-04-21 06:39:59 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-04-21 06:40:00 [scrapy.middleware] INFO: Enabled item pipelines:
+['SeeMeiSpider.pipelines.SeemeispiderPipeline']
+2019-04-21 06:40:00 [scrapy.core.engine] INFO: Spider opened
+2019-04-21 06:40:00 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2019-04-21 06:40:00 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2019-04-21 06:40:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.baidu.com> (referer: None)
+2019-04-21 06:40:00 [py.warnings] WARNING: /usr/local/lib/python3.7/dist-packages/django/db/backends/mysql/base.py:71: Warning: (1265, "Data truncated for column 'url' at row 1")
+  return self.cursor.execute(query, args)
+
+2019-04-21 06:40:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.baidu.com>
+{'url': 'http://www.baidu.com/bdorz/login.gif?login&tpl=mn&u=+ '
+        'encodeURIComponent(window.location.href+ (window.location.search === '}
+2019-04-21 06:40:00 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://passport.baidu.com/v2/?login&tpl=mn&u=+%20encodeURIComponent(window.location.href+%20(window.location.search%20===%20> from <GET http://www.baidu.com/bdorz/login.gif?login&tpl=mn&u=+%20encodeURIComponent(window.location.href+%20(window.location.search%20===%20>
+2019-04-21 06:40:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://passport.baidu.com/v2/?login&tpl=mn&u=+%20encodeURIComponent(window.location.href+%20(window.location.search%20===%20> (referer: None)
+2019-04-21 06:40:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://passport.baidu.com/v2/?login&tpl=mn&u=+%20encodeURIComponent(window.location.href+%20(window.location.search%20===%20>
+None
+2019-04-21 06:40:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://passport.baidu.com/v2/?login&tpl=mn&u=+%20encodeURIComponent(window.location.href+%20(window.location.search%20===%20>
+None
+2019-04-21 06:40:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://passport.baidu.com/export/app/index.html> (referer: https://passport.baidu.com/v2/?login&tpl=mn&u=+%20encodeURIComponent(window.location.href+%20(window.location.search%20===%20)
+2019-04-21 06:40:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.baidu.com> (referer: None)
+2019-04-21 06:40:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://passport.baidu.com/export/app/index.html>
+None
+2019-04-21 06:40:01 [scrapy.spidermiddlewares.depth] DEBUG: Ignoring link (depth > 2): https://www.baidu.com/center 
+2019-04-21 06:40:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://passport.baidu.com/export/app/index.html>
+None
+2019-04-21 06:40:01 [scrapy.spidermiddlewares.depth] DEBUG: Ignoring link (depth > 2): https://passport.baidu.com/export/app/download/BaiduSecurityCenter.apk 
+2019-04-21 06:40:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://passport.baidu.com/export/app/index.html>
+None
+2019-04-21 06:40:01 [scrapy.spidermiddlewares.depth] DEBUG: Ignoring link (depth > 2): https://itunes.apple.com/cn/app/bai-du-quan-zhong-xin-shou/id695439229 
+2019-04-21 06:40:01 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.baidu.com>
+None
+2019-04-21 06:40:01 [scrapy.spidermiddlewares.depth] DEBUG: Ignoring link (depth > 2): https://www.baidu.com/content-search.xml 
+2019-04-21 06:40:01 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.baidu.com>
+None
+2019-04-21 06:40:01 [scrapy.spidermiddlewares.depth] DEBUG: Ignoring link (depth > 2): https://www.baidu.com/t12.baidu.com 
+2019-04-21 06:40:01 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.baidu.com>
+None
+2019-04-21 06:40:01 [scrapy.spidermiddlewares.depth] DEBUG: Ignoring link (depth > 2): http://ir.baidu.com 
+2019-04-21 06:40:01 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.baidu.com>
+{'url': 'http://wenku.baidu.com/search?word=&lm=0&od=0&ie=utf-8'}
+2019-04-21 06:40:01 [scrapy.spidermiddlewares.depth] DEBUG: Ignoring link (depth > 2): http://wenku.baidu.com/search?word=&lm=0&od=0&ie=utf-8 
+2019-04-21 06:40:01 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.baidu.com>
+None
+2019-04-21 06:40:01 [scrapy.spidermiddlewares.depth] DEBUG: Ignoring link (depth > 2): http://www.baidu.com/gaoji/preferences.html 
+2019-04-21 06:40:01 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.baidu.com>
+None
+2019-04-21 06:40:01 [scrapy.spidermiddlewares.depth] DEBUG: Ignoring link (depth > 2): https://www.baidu.com/t3.baidu.com 
+2019-04-21 06:40:01 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.baidu.com>
+None
+2019-04-21 06:40:01 [scrapy.spidermiddlewares.depth] DEBUG: Ignoring link (depth > 2): http://www.baidu.com/more 
+2019-04-21 06:40:01 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.baidu.com>
+{'url': 'http://www.baidu.com/s?wd=今日新鲜事&tn=SE_PclogoS_8whnvm25&sa=ire_dl_gh_logo&rsv_dl=igh_logo_pcs'}
+2019-04-21 06:40:01 [scrapy.spidermiddlewares.depth] DEBUG: Ignoring link (depth > 2): http://www.baidu.com/s?wd=%E4%BB%8A%E6%97%A5%E6%96%B0%E9%B2%9C%E4%BA%8B&tn=SE_PclogoS_8whnvm25&sa=ire_dl_gh_logo&rsv_dl=igh_logo_pcs 
+2019-04-21 06:40:01 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.baidu.com>
+None
+2019-04-21 06:40:01 [scrapy.spidermiddlewares.depth] DEBUG: Ignoring link (depth > 2): http://jianyi.baidu.com 
+2019-04-21 06:40:01 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.baidu.com>
+{'url': 'http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11000002000001'}
+2019-04-21 06:40:01 [scrapy.spidermiddlewares.depth] DEBUG: Ignoring link (depth > 2): http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11000002000001 
+2019-04-21 06:40:01 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.baidu.com>
+{'url': 'http://www.baidu.com/s?rtt=1&bsst=1&cl=2&tn=news&word='}
+2019-04-21 06:40:01 [scrapy.spidermiddlewares.depth] DEBUG: Ignoring link (depth > 2): http://www.baidu.com/s?rtt=1&bsst=1&cl=2&tn=news&word= 
+2019-04-21 06:40:01 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.baidu.com>
+None
+2019-04-21 06:40:01 [scrapy.spidermiddlewares.depth] DEBUG: Ignoring link (depth > 2): https://www.baidu.com/%22+s+%22 
+2019-04-21 06:40:01 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.baidu.com>
+None
+2019-04-21 06:40:01 [scrapy.spidermiddlewares.depth] DEBUG: Ignoring link (depth > 2): http://home.baidu.com 
+2019-04-21 06:40:01 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.baidu.com>
+None
+2019-04-21 06:40:01 [scrapy.spidermiddlewares.depth] DEBUG: Ignoring link (depth > 2): http://news.baidu.com 
+2019-04-21 06:40:01 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.baidu.com>
+None
+2019-04-21 06:40:01 [scrapy.spidermiddlewares.depth] DEBUG: Ignoring link (depth > 2): https://www.hao123.com 
+2019-04-21 06:40:01 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.baidu.com>
+{'url': 'https://passport.baidu.com/v2/?login&tpl=mn&u=http://www.baidu.com/&sms=5'}
+2019-04-21 06:40:01 [scrapy.spidermiddlewares.depth] DEBUG: Ignoring link (depth > 2): https://passport.baidu.com/v2/?login&tpl=mn&u=http://www.baidu.com/&sms=5 
+2019-04-21 06:40:01 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.baidu.com>
+None
+2019-04-21 06:40:01 [scrapy.spidermiddlewares.depth] DEBUG: Ignoring link (depth > 2): https://www.baidu.com/t1.baidu.com 
+2019-04-21 06:40:01 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.baidu.com>
+{'url': 'http://e.baidu.com/?refer=888'}
+2019-04-21 06:40:01 [scrapy.spidermiddlewares.depth] DEBUG: Ignoring link (depth > 2): http://e.baidu.com/?refer=888 
+2019-04-21 06:40:01 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.baidu.com>
+None
+2019-04-21 06:40:01 [scrapy.spidermiddlewares.depth] DEBUG: Ignoring link (depth > 2): http://map.baidu.com 
+2019-04-21 06:40:01 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.baidu.com>
+None
+2019-04-21 06:40:01 [scrapy.spidermiddlewares.depth] DEBUG: Ignoring link (depth > 2): http://www.baidu.com/duty 
+2019-04-21 06:40:01 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.baidu.com>
+None
+2019-04-21 06:40:01 [scrapy.spidermiddlewares.depth] DEBUG: Ignoring link (depth > 2): http://xueshu.baidu.com 
+2019-04-21 06:40:01 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.baidu.com>
+{'url': 'http://music.taihe.com/search?fr=ps&ie=utf-8&key='}
+2019-04-21 06:40:01 [scrapy.spidermiddlewares.depth] DEBUG: Ignoring link (depth > 2): http://music.taihe.com/search?fr=ps&ie=utf-8&key= 
+2019-04-21 06:40:01 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.baidu.com>
+{'url': 'http://map.baidu.com/m?word=&fr=ps01000'}
+2019-04-21 06:40:01 [scrapy.spidermiddlewares.depth] DEBUG: Ignoring link (depth > 2): http://map.baidu.com/m?word=&fr=ps01000 
+2019-04-21 06:40:01 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.baidu.com>
+None
+2019-04-21 06:40:01 [scrapy.spidermiddlewares.depth] DEBUG: Ignoring link (depth > 2): http://www.baidu.com/cache/sethelp/help.html 
+2019-04-21 06:40:01 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.baidu.com>
+None
+2019-04-21 06:40:01 [scrapy.spidermiddlewares.depth] DEBUG: Ignoring link (depth > 2): https://www.baidu.com/b1.bdstatic.com 
+2019-04-21 06:40:01 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.baidu.com>
+{'url': 'http://zhidao.baidu.com/q?ct=17&pn=0&tn=ikaslist&rn=10&word=&fr=wwwt'}
+2019-04-21 06:40:01 [scrapy.spidermiddlewares.depth] DEBUG: Ignoring link (depth > 2): http://zhidao.baidu.com/q?ct=17&pn=0&tn=ikaslist&rn=10&word=&fr=wwwt 
+2019-04-21 06:40:01 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.baidu.com>
+None
+2019-04-21 06:40:01 [scrapy.spidermiddlewares.depth] DEBUG: Ignoring link (depth > 2): https://www.baidu.com/ 
+2019-04-21 06:40:01 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.baidu.com>
+None
+2019-04-21 06:40:01 [scrapy.spidermiddlewares.depth] DEBUG: Ignoring link (depth > 2): http://v.baidu.com 
+2019-04-21 06:40:01 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.baidu.com>
+None
+2019-04-21 06:40:01 [scrapy.spidermiddlewares.depth] DEBUG: Ignoring link (depth > 2): https://www.baidu.com/s1.bdstatic.com 
+2019-04-21 06:40:01 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.baidu.com>
+{'url': 'http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=25&ie=utf-8&word='}
+2019-04-21 06:40:01 [scrapy.spidermiddlewares.depth] DEBUG: Ignoring link (depth > 2): http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=25&ie=utf-8&word= 
+2019-04-21 06:40:01 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.baidu.com>
+None
+2019-04-21 06:40:01 [scrapy.spidermiddlewares.depth] DEBUG: Ignoring link (depth > 2): https://www.baidu.com/t10.baidu.com 
+2019-04-21 06:40:01 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.baidu.com>
+None
+2019-04-21 06:40:01 [scrapy.spidermiddlewares.depth] DEBUG: Ignoring link (depth > 2): http://www.baidu.com/more 
+2019-04-21 06:40:01 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.baidu.com>
+None
+2019-04-21 06:40:01 [scrapy.spidermiddlewares.depth] DEBUG: Ignoring link (depth > 2): https://www.baidu.com/t11.baidu.com 
+2019-04-21 06:40:01 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.baidu.com>
+None
+2019-04-21 06:40:01 [scrapy.spidermiddlewares.depth] DEBUG: Ignoring link (depth > 2): https://www.baidu.com/t2.baidu.com 
+2019-04-21 06:40:01 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.baidu.com>
+{'url': 'http://tieba.baidu.com/f?kw=&fr=wwwt'}
+2019-04-21 06:40:01 [scrapy.spidermiddlewares.depth] DEBUG: Ignoring link (depth > 2): http://tieba.baidu.com/f?kw=&fr=wwwt 
+2019-04-21 06:40:01 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.baidu.com>
+{'url': 'http://image.baidu.com/search/index?tn=baiduimage&ps=1&ct=201326592&lm=-1&cl=2&nc=1&ie=utf-8&word='}
+2019-04-21 06:40:01 [scrapy.spidermiddlewares.depth] DEBUG: Ignoring link (depth > 2): http://image.baidu.com/search/index?tn=baiduimage&ps=1&ct=201326592&lm=-1&cl=2&nc=1&ie=utf-8&word= 
+2019-04-21 06:40:01 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.baidu.com>
+{'url': 'http://www.baidu.com/img/bd_logo1.png?qua=high'}
+2019-04-21 06:40:01 [scrapy.spidermiddlewares.depth] DEBUG: Ignoring link (depth > 2): http://www.baidu.com/img/bd_logo1.png?qua=high 
+2019-04-21 06:40:01 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.baidu.com>
+None
+2019-04-21 06:40:01 [scrapy.spidermiddlewares.depth] DEBUG: Ignoring link (depth > 2): http://tieba.baidu.com 
+2019-04-21 06:40:01 [scrapy.core.engine] INFO: Closing spider (finished)
+2019-04-21 06:40:01 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 1628,
+ 'downloader/request_count': 5,
+ 'downloader/request_method_count/GET': 5,
+ 'downloader/response_bytes': 46337,
+ 'downloader/response_count': 5,
+ 'downloader/response_status_count/200': 4,
+ 'downloader/response_status_count/302': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2019, 4, 21, 6, 40, 1, 286710),
+ 'item_scraped_count': 44,
+ 'log_count/DEBUG': 90,
+ 'log_count/INFO': 9,
+ 'log_count/WARNING': 1,
+ 'memusage/max': 76861440,
+ 'memusage/startup': 76861440,
+ 'request_depth_max': 2,
+ 'response_received_count': 4,
+ 'scheduler/dequeued': 5,
+ 'scheduler/dequeued/memory': 5,
+ 'scheduler/enqueued': 5,
+ 'scheduler/enqueued/memory': 5,
+ 'start_time': datetime.datetime(2019, 4, 21, 6, 40, 0, 40966)}
+2019-04-21 06:40:01 [scrapy.core.engine] INFO: Spider closed (finished)

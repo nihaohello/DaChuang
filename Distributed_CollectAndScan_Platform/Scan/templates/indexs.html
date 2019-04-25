@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  {% load  static %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Creative - Bootstrap 3 Responsive Admin Template">
+    <meta name="author" content="GeeksLabs">
+    <meta name="keyword" content="Creative, Dashboard, Admin, Template, Theme, Bootstrap, Responsive, Retina, Minimal">
+    <link rel="shortcut icon" href="{% static 'img/favicon.png'%}">
+
+    <title>Creative - Bootstrap Admin Template</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="{% static 'css/bootstrap.min.css'%}" rel="stylesheet">
+    <!-- bootstrap theme -->
+    <link href="{% static 'css/bootstrap-theme.css'%}" rel="stylesheet">
+    <!--external css-->
+    <!-- font icon -->
+    <link href="{% static 'css/elegant-icons-style.css'%}" rel="stylesheet" />
+    <link href="{% static 'css/font-awesome.min.css'%}" rel="stylesheet" />
+    <!-- full calendar css-->
+    <link href="{% static 'assets/fullcalendar/fullcalendar/bootstrap-fullcalendar.css'%}" rel="stylesheet" />
+	<link href="{% static 'assets/fullcalendar/fullcalendar/fullcalendar.css'%}" rel="stylesheet" />
+    <!-- easy pie chart-->
+    <link href="{% static 'assets/jquery-easy-pie-chart/jquery.easy-pie-chart.css'%}" rel="stylesheet" type="text/css" media="screen"/>
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.css'%}" type="text/css">
+	<linkCountries  href="css/jquery-jvectormap-1.2.2.css" rel="stylesheet">
+    <!-- Custom styles -->
+	<link rel="stylesheet" href="{% static 'css/fullcalendar.css'%}">
+	<link href="{% static 'css/widgets.css'%}" rel="stylesheet">
+    <link href="{% static 'css/style.css'%}" rel="stylesheet">
+    <link href="{% static 'css/style-responsive.css'%}" rel="stylesheet" />
+	<link href="{% static 'css/xcharts.min.css'%}" rel=" stylesheet">
+	<link href="{% static 'css/jquery-ui-1.10.4.min.css'%}" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 -->
+    <!--[if lt IE 9]>
+      <script src="{% static 'js/html5shiv.js'%}"></script>
+      <script src="{% static 'js/respond.min.js'%}"></script>
+      <script src="{% static 'js/lte-ie7.js'%}"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+  <!-- container section start -->
+  <section id="container" class="">
+
+
+      <header class="header dark-bg">
+            <div class="toggle-nav">
+                <div class="icon-reorder tooltips" data-original-title="Toggle Navigation" data-placement="bottom"></div>
+            </div>
+
+            <!--logo start-->
+            <a href="{% static 'indexs.html'%}" class="logo">Collect_Scan_Platform</a>
+            <!--logo end-->
+
+            <div class="nav search-row" id="top_menu">
+                <!--  search form start -->
+                <ul class="nav top-menu">
+                    <li>
+                        <form class="navbar-form">
+                            <input class="form-control" placeholder="Search" type="text">
+                        </form>
+                    </li>
+                </ul>
+                <!--  search form end -->
+            </div>
+
+
+                </ul>
+                <!-- notificatoin dropdown end-->
+            </div>
+      </header>
+      <!--header end-->
+
+      <!--sidebar start-->
+      <aside>
+          <div id="sidebar"  class="nav-collapse ">
+              <!-- sidebar menu start-->
+              <ul class="sidebar-menu">
+                  <li class="active">
+                      <a class="" href="{% static 'indexs.html'%}">
+                          <i class="icon_house_alt"></i>
+                          <span>singal url</span>
+                      </a>
+                  </li>
+                  <li>
+                      <a class="" href="{% static 'domains.html'%}">
+                          <i class="icon_genius"></i>
+                          <span>domains扫描</span>
+                      </a>
+                  </li>
+                  <li>
+                      <a class="" href="{% static 'ips_scan.html'%}">
+                          <i class="icon_piechart"></i>
+                          <span>特定的段扫描</span>
+
+                      </a>
+
+                  </li>
+									<li>
+											<a class="" href="{% static 'all_scan.html'%}">
+													<i class="icon_piechart"></i>
+													<span>全网扫描</span>
+
+											</a>
+
+									</li>
+              </ul>
+              <!-- sidebar menu end-->
+          </div>
+      </aside>
+      <!--sidebar end-->
+
+      <!--main content start-->
+      <section id="main-content">
+          <section class="wrapper">
+
+              <!--overview start-->
+				<div class="input-group input-group-lg">
+				<input type="text" id="url_name" class="form-control" aria-label="..." name="url">
+				<div class="input-group-btn">
+					<button type="button" id="singal_url" class="btn btn-info btn-lg search-btn" aria-haspopup="true" aria-expanded="false"><b>检测</b></button>
+				</div>
+			</div>
+
+        <div class="row">
+            <div class="col-lg-12 col-md-12">
+                <div class="panel panel-default">
+						<div class="panel-heading">
+							<h2><strong>扫描结果：</strong></h2>
+							<div id="panel-actions">
+							</div>
+						</div>
+                    <table class="table table-hover" >
+                        <thead>
+                            <tr>
+                                <th>url</th>
+                                <th>存在漏洞类型</th>
+                            </tr>
+                        </thead>
+                    <tbody id="t_body" >
+                    <!--output-->
+                    </tbody>
+                    </table>
+					</div>
+            </div>
+        </div>
+       <div class="row">
+		    <div class="col-lg-12 col-md-12">
+
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h2><i class="fa fa-map-marker red"></i><strong>地图</strong></h2>
+							<div id="panel-actions">
+							</div>
+						</div>
+						<div class="panel-body-map">
+							<div id="allmap" style="height:380px;"></div>
+						</div>
+					</div>
+				</div>
+          </section>
+      </section>
+      <!--main content end-->
+  </section>
+  <!-- container section start -->
+
+  <!--地图请求函数 -->
+  <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=toGFnmI4HUgy2EpwyCpMGZvS7GqePNnA"></script>
+  <script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+  <script type="text/javascript">
+      //地图
+      function city_map(city) {
+            var map = new BMap.Map("allmap");
+	        var point = new BMap.Point(116.331398,39.897445);
+	        map.centerAndZoom(city,12);
+      }
+
+	    //判断url是否合法
+    function checkURL(URL){
+        var str=URL;
+        //判断URL地址的正则表达式为:http(s)?://([\w-]+\.)+[\w-]+(/[\w- ./?%&=]*)?
+        //下面的代码中应用了转义字符"\"输出一个字符"/"
+        var Expression=/http(s)?:\/\/([\w-]+\.)+[\w-]+(\/[\w- .\/?%&=]*)?/;
+        var objExp=new RegExp(Expression);
+        if(objExp.test(str)==true){
+        return true;
+        }else{
+            return false;
+            }
+        }
+
+
+    function requests(url){
+        api_url="get_city_from_domain"
+        $.ajax({
+            method:'GET',
+            data:{"url":url},
+            url:api_url,
+            success:function(data){
+                  //alert(data)
+                  city_map(data)
+            }
+        });
+}
+
+//scrapy_crawl
+function scrapy_crawl(url){
+        api_url="http://localhost:6800/schedule.json"
+        $.ajax({
+            method:'POST',
+            data: {'project':'SeeMeiSpider', 'spider':'spider'},
+            url:api_url,
+            success:function(data){
+                  //var a=JSON.stringify(data);
+                  //alert(a);
+                  var jobid = data.jobid;
+                  //alert(b);
+                  setTimeout(function(){scrapy_crawl_check(url,jobid);},1000*60*4); 
+                  //alert(JSON.stringify(data));
+            }
+        });
+}
+
+function scrapy_crawl_check(url,jobid){
+        api_url="http://localhost:6800/listjobs.json?project=SeeMeiSpider"
+        //alert("aaaa");
+        $.ajax({
+            method:'GET',
+            //data: {'project':'SeeMeiSpider', 'spider':'spider'},
+            url:api_url,
+            success:function(data){
+              //var a=JSON.stringify(data);
+              //alert(typeof(a));
+              //alert(a);//split("");
+              run=JSON.stringify(data.running);
+              //alert(data.running);
+              alert(jobid);
+              //alert(run);
+              //alert(run.indexOf(jobid));
+              if(run.indexOf(jobid)==1){
+                //crawl conlect
+                //alert(jobid);
+              }
+              else{
+                //alert("no");
+                setTimeout(function(){scrapy_crawl_check(url,jobid);},1000*60*4); 
+              }
+                  //alert(data)
+                  //alert(JSON.stringify(data));
+            }
+        });
+}
+
+function Scan_Vuln(url){
+        api_url="Scan_Vuln"
+        $.ajax({
+            method:'GET',
+            data:{'url':url},
+            //data: {'project':'SeeMeiSpider', 'spider':'spider'},
+            url:api_url,
+            success:function(data){
+              setTimeout(function(){query_mysql(url);},1000*60*5);
+              //alert(data);
+            }
+        });
+}
+
+    //过度函数
+    function temp_hanshu(data){
+        alert(data);
+    }
+    //触发漏洞检测函数
+   $(function() {
+    $("#singal_url").click(function() {
+        add_res=""
+        $("#t_body").html("")
+        var url=$("#url_name").val();
+        if(checkURL(url)){
+            //requests(url)
+            //scrapy_crawl(url);
+            Scan_Vuln(url);
+        }
+        else {
+            alert("输入合法url")
+        }
+    });
+});
+  </script>
+
+  </body>
+</html>

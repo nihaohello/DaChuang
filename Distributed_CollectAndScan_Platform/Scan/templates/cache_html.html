@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    
+</head>
+<body>
+	<div class="input-group input-group-lg">
+				<input type="text" id="url_name" class="form-control" aria-label="..." name="url">
+				<div class="input-group-btn">
+<button type="button" id="singal_url" class="btn btn-info btn-lg search-btn" aria-haspopup="true" aria-expaned="false"><b>检测</b></button></div></div>
+<script type="text/javascript">
+
+
+	    //判断url是否合法
+    function checkURL(URL){
+        var str=URL;
+        //判断URL地址的正则表达式为:http(s)?://([\w-]+\.)+[\w-]+(/[\w- ./?%&=]*)?
+        //下面的代码中应用了转义字符"\"输出一个字符"/"
+        var Expression=/http(s)?:\/\/([\w-]+\.)+[\w-]+(\/[\w- .\/?%&=]*)?/;
+        var objExp=new RegExp(Expression);
+        if(objExp.test(str)==true){
+        return true;
+        }else{
+            return false;
+            }
+        }
+
+
+    function requests(url){
+        api_url="cache_test"
+        $.ajax({
+            method:'GET',
+            data:{"url":url},
+            url:api_url,
+            success:function(data){
+                  //alert(data)
+                  alert(data)
+            }
+        });
+}
+    //触发漏洞检测函数
+   $(function() {
+    $("#singal_url").click(function() {
+        add_res=""
+        $("#t_body").html("")
+        var url=$("#url_name").val();
+        if(checkURL(url)){
+            requests(url)
+        }
+        else {
+            alert("输入合法url")
+        }
+    });
+});
+  </script>
+</body>
+</html>
